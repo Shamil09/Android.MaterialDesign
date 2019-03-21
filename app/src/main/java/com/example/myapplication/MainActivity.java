@@ -5,6 +5,7 @@ import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
+import com.google.android.material.textfield.TextInputLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -20,11 +21,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        new ThemeColors(this);
+        //new ThemeColors(this);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
+        TextInputLayout textInputLayout=findViewById(R.id.input_surname);
         setSupportActionBar(toolbar);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) toolbar.setElevation(48);
+        //if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) toolbar.setElevation(48);
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,9 +36,12 @@ public class MainActivity extends AppCompatActivity {
                 int red= new Random().nextInt(255);
                 int green= new Random().nextInt(255);
                 int blue= new Random().nextInt(255);
-                ThemeColors.setNewThemeColor(MainActivity.this, red, green, blue);
+                //ThemeColors.setNewThemeColor(MainActivity.this, red, green, blue);
             }
         });
+        textInputLayout.getEditText().setError("Error",getDrawable(R.drawable.roand));
+        //textInputLayout.getEditText().setError("Error");
+        //textInputLayout.setError("Error");
     }
 
     @Override
