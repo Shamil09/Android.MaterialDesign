@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--colors for my gallery-->
+    <color name="colorPrimaryG">#fff</color>
+    <color name="colorPrimaryDarkG">#00a5ff</color>
+    <color name="colorAccentG">#f0f0f0</color>
+</resources>
