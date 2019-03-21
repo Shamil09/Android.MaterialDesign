@@ -13,4 +13,5 @@ public class Fragment1 extends Fragment {
                              Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_blank_fragment1, null);
     }
+    //проверка пула
 }
