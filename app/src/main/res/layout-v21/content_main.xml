@@ -49,7 +49,7 @@
     <com.google.android.material.button.MaterialButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hi there"
+        android:text="@string/hi_there"
         android:elevation="40dp"
         android:stateListAnimator="@null"
         app:layout_constraintLeft_toLeftOf="parent"
